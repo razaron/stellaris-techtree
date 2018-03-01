@@ -65,7 +65,7 @@
     "category": "Particles",
     "prerequisite_names": [],
     "tier": 0,
-    "description": "$REACTOR_BOOSTER_1_DESC$",
+    "description": "Additional power generation systems increase the ship's reactor output.",
     "area": "physics",
     "prerequisites": [
       "tech_fission_power"
@@ -368,7 +368,7 @@
     "category": "Computing",
     "prerequisite_names": [],
     "tier": 1,
-    "description": "$FIRE_CONTROL_1_DESC$",
+    "description": "By installing an auxiliary fire-control system our ships can afford to make more advanced calculations, increasing accuracy.",
     "area": "physics",
     "prerequisites": [
       "tech_combat_computers_1"
@@ -419,7 +419,7 @@
       "\u2022 Reactor Boosters\n"
     ],
     "tier": 1,
-    "description": "$REACTOR_BOOSTER_2_DESC$",
+    "description": "The discovery of fusion power allows for better reactor boosters to be fitted onto our ships.",
     "area": "physics",
     "prerequisites": [
       "tech_fusion_power",
@@ -446,7 +446,7 @@
       "\u2022 Improved Reactor Boosters\n"
     ],
     "tier": 1,
-    "description": "$REACTOR_BOOSTER_3_DESC$",
+    "description": "The discovery of antimatter power allows for highly advanced reactor boosters that can greatly enhance ship reactors.",
     "area": "physics",
     "prerequisites": [
       "tech_antimatter_power",
@@ -736,7 +736,7 @@
     "cost": 2000,
     "key": "tech_space_cloud_weapon_1",
     "feature_unlocks": [
-      "Unlocks Component: $SPACE_CLOUD_WEAPON_1$"
+      "Unlocks Component: Cloud Lightning"
     ],
     "base_factor": 1.0,
     "base_weight": 0,
@@ -1043,7 +1043,7 @@
     "feature_unlocks": [
       "Unlocks Feature: Planetary FTL Inhibitors",
       "Unlocks Feature: Planetary FTL Inhibitors",
-      "Unlocks Component: $sm_ftl_inhibitor$"
+      "Unlocks Component: FTL Inhibitor"
     ],
     "base_factor": 1.0,
     "base_weight": 75,
@@ -2379,7 +2379,7 @@
     "category": "Voidcraft",
     "prerequisite_names": [],
     "tier": 5,
-    "description": "$PLANET_KILLER_SHIELDER_DESC$",
+    "description": "A shielding field is deployed around a planet, creating a barrier that is permanent and impenetrable (save for some wavelengths of light).",
     "area": "physics",
     "prerequisites": [
       "tech_colossus"
@@ -2404,7 +2404,7 @@
     "category": "Voidcraft",
     "prerequisite_names": [],
     "tier": 5,
-    "description": "$PLANET_KILLER_NEUTRON_DESC$",
+    "description": "An accelerated plume of neutron radiation \"paints\" the planet surface, severely degrading most materials and directly destroying biological tissue.",
     "area": "physics",
     "prerequisites": [
       "tech_colossus"
@@ -2536,7 +2536,7 @@
     "category": "Statecraft",
     "prerequisite_names": [],
     "tier": 1,
-    "description": "$tech_frontier_health_desc_machine_intelligence$",
+    "description": "The use of modular parts when assembling new machine units will both streamline the process and make future repairs easier.",
     "area": "society",
     "prerequisites": [
       "tech_colonization_1"
@@ -2555,7 +2555,7 @@
       "(\u00d70)  Does NOT have Machine Intelligence Authority\n"
     ],
     "is_start_tech": false,
-    "name": "$tech_frontier_health_machine_intelligence$"
+    "name": "Modular Components"
   },
   {
     "category": "Biology",
@@ -2569,7 +2569,7 @@
     "cost": 780,
     "key": "tech_space_whale_weapon_1",
     "feature_unlocks": [
-      "Unlocks Component: $SPACE_WHALE_WEAPON_1$"
+      "Unlocks Component: Energy Siphon"
     ],
     "base_factor": 1.0,
     "base_weight": 0,
@@ -3099,7 +3099,7 @@
       "\u2022 Colonial Centralization\n"
     ],
     "tier": 2,
-    "description": "$tech_frontier_hospital_desc_machine_intelligence$",
+    "description": "These factories are essentially self-aware entities that continually optimize themselves with only minimal input from the central Machine Intelligence.",
     "area": "society",
     "prerequisites": [
       "tech_modular_components",
@@ -3119,7 +3119,7 @@
       "(\u00d70)  Does NOT have Machine Intelligence Authority\n"
     ],
     "is_start_tech": false,
-    "name": "$tech_frontier_hospital_machine_intelligence$"
+    "name": "Intelligent Factories"
   },
   {
     "category": "Biology",
@@ -5098,7 +5098,7 @@
     "category": "Statecraft",
     "prerequisite_names": [],
     "tier": 4,
-    "description": "$building_galactic_stock_exchange_desc$",
+    "description": "By engaging in free trade of goods and services we allow for a more specialized economy, where an individual can excel in a narrow field and trade for their needs.",
     "area": "society",
     "prerequisites": [
       "tech_colonial_centralization"
@@ -5531,7 +5531,7 @@
     "category": "Statecraft",
     "prerequisite_names": [],
     "tier": 5,
-    "description": "$tech_ascension_theory_desc$",
+    "description": "Our history is a repeating cycle of dramatic technological, political, and cultural leaps; these leaps are often preceded by periods of upheaval and followed by times of relative stability. By identifying the core, recurring premises of these leaps, we may be able to effectively short-circuit the cycle for our own benefit.",
     "area": "society",
     "prerequisites": [],
     "is_dangerous": false,
@@ -5549,7 +5549,7 @@
       "(\u00d70.2)  None of the following:\n    \u2022   Has the Curator Insight modifier\n    \u2022   Research Leader (Physics):\n        \u2022   Is Curator\n    \u2022   Research Leader (Physics):\n        \u2022   Is Computing Expert\n"
     ],
     "is_start_tech": false,
-    "name": "$tech_ascension_theory$"
+    "name": "Ascension Theory"
   },
   {
     "category": "Psionics",
@@ -5927,7 +5927,7 @@
     "cost": 780,
     "key": "tech_flak_batteries_1",
     "feature_unlocks": [
-      "Unlocks Component: $tech_flak_batteries_1$"
+      "Unlocks Component: Flak Battery"
     ],
     "base_factor": 1.0,
     "base_weight": 90,
@@ -7027,7 +7027,7 @@
     "cost": 2000,
     "key": "tech_flak_batteries_2",
     "feature_unlocks": [
-      "Unlocks Component: $tech_flak_batteries_2$"
+      "Unlocks Component: Flak Cannons"
     ],
     "base_factor": 1.0,
     "base_weight": 70,
@@ -7622,7 +7622,7 @@
     "cost": 6000,
     "key": "tech_flak_batteries_3",
     "feature_unlocks": [
-      "Unlocks Component: $tech_flak_batteries_3$"
+      "Unlocks Component: Flak Artillery"
     ],
     "base_factor": 1.0,
     "base_weight": 45,
@@ -8503,7 +8503,7 @@
     "category": "Voidcraft",
     "prerequisite_names": [],
     "tier": 5,
-    "description": "$PLANET_KILLER_CRACKER_DESC$",
+    "description": "A directed feed of thermic energy superheats the atmosphere and agitates the planet's core, setting up disastrous tectonic events. A final and comparatively minute concussive blast is then delivered, cracking the planet open.",
     "area": "engineering",
     "prerequisites": [
       "tech_colossus"
@@ -8527,7 +8527,7 @@
     "category": "Voidcraft",
     "prerequisite_names": [],
     "tier": 5,
-    "description": "$PLANET_KILLER_NANOBOTS$",
+    "description": "Nanobot Diffuser",
     "area": "engineering",
     "prerequisites": [
       "tech_colossus"

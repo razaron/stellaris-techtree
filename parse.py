@@ -260,7 +260,11 @@ def localized_strings():
         if len(loc_data[data]) and loc_data[data][0] == '$':
             try:
                 for ref in re.findall(r"\$(.*?)\$", loc_data[data], re.DOTALL):
-                    loc_data[data].replace('$'+ref+'$', loc_data[ref])
+                    loc_data[data] = loc_data[data].replace('${}$'.format(ref), loc_data[ref])
+                    if ref == 'REACTOR_BOOSTER_1_DESC':
+                        print('$'+ref+'$')
+                        print(loc_data[ref])
+                        print(loc_data[data])
             except KeyError:
                 print('Warning: {} could not be localized'.decode('utf-8').format(ref))
 
