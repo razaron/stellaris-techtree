@@ -257,7 +257,13 @@ def localized_strings():
             sys.exit()
 
     for data in loc_data:
-        if(data[0]=='$'):print(data)
+        if len(loc_data[data]) and loc_data[data][0] == '$':
+            try:
+                for ref in re.findall(r"\$(.*?)\$", loc_data[data], re.DOTALL):
+                    loc_data[data].replace('$'+ref+'$', loc_data[ref])
+            except KeyError:
+                print('Warning: {} could not be localized'.decode('utf-8').format(ref))
+
 
     return loc_data
 
@@ -444,10 +450,10 @@ for entry in parsed_scripts['technology']:
                       spaceport_modules, tile_blockers, loc_data, at_vars,
                       start_with_tier_zero)
 
-    if not tech.is_start_tech \
-       and tech.base_weight * tech.base_factor == 0 \
-       and len(tech.weight_modifiers) == 0:
-        print(tech.key)
+    #if not tech.is_start_tech \
+      # and tech.base_weight * tech.base_factor == 0 \
+      # and len(tech.weight_modifiers) == 0:
+        #print(tech.key)
         #continue
 
     technologies.append(tech)
