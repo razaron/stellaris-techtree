@@ -60,7 +60,6 @@ class FeatureUnlocks:
     def _modifiers(self, tech_data):
 
         def localize(modifier):
-            print(modifier)
             key = modifier.keys()[0]
             if key in ('description', 'description_parameters',
                        'BIOLOGICAL_species_trait_points_add'):
@@ -75,6 +74,10 @@ class FeatureUnlocks:
                 key = 'MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED'
             elif key == 'science_ship_survey_speed':
                 key = 'MOD_SHIP_SCIENCE_SURVEY_SPEED'
+            elif key == 'ship_anomaly_generation_chance_mult':
+                key = 'MOD_SHIP_ANOMALY_GENERATION_CHANCE'
+            elif key == 'ship_anomaly_research_speed_mult':
+                key = 'MOD_SHIP_ANOMALY_RESEARCH_SPEED'
 
             try:
                 localized = {self._localize(key): value}

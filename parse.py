@@ -440,11 +440,12 @@ for entry in parsed_scripts['technology']:
                       buildings, components, edicts, policies, resources,
                       spaceport_modules, tile_blockers, loc_data, at_vars,
                       start_with_tier_zero)
-    # print(tech.key)
+
     if not tech.is_start_tech \
        and tech.base_weight * tech.base_factor == 0 \
        and len(tech.weight_modifiers) == 0:
-        continue
+        print(tech.key)
+        #continue
 
     technologies.append(tech)
 

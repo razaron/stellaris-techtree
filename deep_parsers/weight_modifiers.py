@@ -11,6 +11,10 @@ def parse(modifier, loc_data):
     global localization_map
     localization_map = loc_data
 
+    import json
+    with open('output.txt', 'w') as file:
+         file.write(json.dumps(loc_data))
+
     if len(modifier) == 1:
         modifier.append({'always': 'yes'})
 
@@ -68,6 +72,13 @@ def _localize_has_not_ethic(value):
     ethic = localization_map[value]
     return 'Does NOT have {} Ethic'.format(ethic)
 
+def _localize_is_pacifist(value):
+    return _localize_has_ethic('ethic_pacifist') if value == 'yes'\
+        else _localize_has_not_ethic('ethic_pacifist')
+
+def _localize_is_materialist(value):
+    return _localize_has_ethic('ethic_materialist') if value == 'yes'\
+        else _localize_has_not_ethic('ethic_materialist')
 
 def _localize_has_civic(value):
     civic = localization_map[value]
@@ -183,6 +194,11 @@ def _localize_has_any_megastructure_in_empire(value):
     return 'Has any Megastructure' if value == 'yes' \
         else 'Has NO Megastructures'
 
+def _localize_has_not_seen_any_bypass(value):
+    return 'Has not seen Bypass: {}'.format(value)
+
+def _localize_owns_any_bypass(value):
+    return 'Owns Bypass: {}'.format(value)
 
 def _localize_allows_slavery(value):
     return 'Allows Slavery' if value == 'yes' \
@@ -305,6 +321,8 @@ def _localize_any_system_within_border(values):
 def _localize_is_in_cluster(value):
     return 'Is in a {} Cluster'.format(value)
 
+def _localize_count_starbase_sizes(values):
+    return 'Number of {}\'s: {}'.format(localization_map[values[0]['starbase_size']], [1])
 
 def _localize_any_country(values):
     parsed_values = [_parse_condition(value) for value in values]
@@ -317,6 +335,13 @@ def _localize_any_relation(values):
 def _localize_any_owned_pop(values):
     parsed_values = [_parse_condition(value) for value in values]
     return {'Any empire Pop': parsed_values}
+
+def _localize_any_pop(values):
+    parsed_values = [_parse_condition(value) for value in values]
+    return {'Any Pop': parsed_values}
+
+def _localize_is_sapient(value):
+    return {'Is Sapient': value}
 
 def _localize_not_any_owned_pop(values):
     parsed_values = [_parse_condition(value) for value in values]
@@ -331,6 +356,10 @@ def _localize_any_owned_planet(values):
 def _localize_any_planet(values):
     parsed_values = [_parse_condition(value) for value in values]
     return {'Any Planet': parsed_values}
+
+def _localize_any_planet_within_border(values):
+    parsed_values = [_parse_condition(value) for value in values]
+    return {'Any Planet within Borders': parsed_values}
 
 
 def _localize_not_any_owned_planet(values):
