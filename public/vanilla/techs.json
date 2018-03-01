@@ -422,8 +422,8 @@
     "description": "The discovery of fusion power allows for better reactor boosters to be fitted onto our ships.",
     "area": "physics",
     "prerequisites": [
-      "tech_fusion_power",
-      "tech_reactor_boosters_1"
+      "tech_reactor_boosters_1",
+      "tech_fusion_power"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -449,8 +449,8 @@
     "description": "The discovery of antimatter power allows for highly advanced reactor boosters that can greatly enhance ship reactors.",
     "area": "physics",
     "prerequisites": [
-      "tech_antimatter_power",
-      "tech_reactor_boosters_2"
+        "tech_reactor_boosters_2",
+        "tech_antimatter_power"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -1527,8 +1527,8 @@
     "description": "A more powerful version of the particle lance, this weapon fires a tachyon beam of immense power. Like its predecessor, its use is limited to battleships and titans.",
     "area": "physics",
     "prerequisites": [
-      "tech_lasers_5",
-      "tech_energy_lance_1"
+      "tech_energy_lance_1",
+      "tech_lasers_5"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -3929,26 +3929,6 @@
     "name": "Selected Lineages"
   },
   {
-    "category": "Biology",
-    "prerequisite_names": [],
-    "tier": 3,
-    "description": "A genetically altered version of silicon-based bacteria could potentially be manipulated to regenerate non-organic materials.",
-    "area": "society",
-    "prerequisites": [],
-    "is_dangerous": false,
-    "is_rare": true,
-    "cost": 4000,
-    "key": "tech_regenerative_hull_tissue",
-    "feature_unlocks": [
-      "Unlocks Component: Regenerative Hull Tissue"
-    ],
-    "base_factor": 0.0,
-    "base_weight": 60,
-    "weight_modifiers": [],
-    "is_start_tech": false,
-    "name": "Regenerative Hull Tissue"
-  },
-  {
     "category": "Military Theory",
     "prerequisite_names": [],
     "tier": 3,
@@ -5300,28 +5280,6 @@
     "category": "Voidcraft",
     "prerequisite_names": [],
     "tier": 0,
-    "description": "The realization of faster-than-light travel is a new dawn for space exploration. Manned missions to other star systems are now not only possible, but necessary.",
-    "area": "engineering",
-    "prerequisites": [
-      "tech_basic_science_lab_1"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "cost": 0,
-    "key": "tech_space_exploration",
-    "feature_unlocks": [
-      "Unlocks Ship Type: Science Ship"
-    ],
-    "base_factor": 1.0,
-    "base_weight": 0,
-    "weight_modifiers": [],
-    "is_start_tech": true,
-    "name": "Space Exploration"
-  },
-  {
-    "category": "Voidcraft",
-    "prerequisite_names": [],
-    "tier": 0,
     "description": "The FTL breakthrough allowed early attempts to adapt traditional surface-to-space shuttle frames to military applications to finally create relatively small, fast, and maneuverable vessels with limited firepower.",
     "area": "engineering",
     "prerequisites": [
@@ -5344,28 +5302,6 @@
     "category": "Voidcraft",
     "prerequisite_names": [],
     "tier": 0,
-    "description": "A centralized space installation built in close orbit around the system primary is necessary to make full use of the resources in a star system.",
-    "area": "engineering",
-    "prerequisites": [
-      "tech_space_construction"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "cost": 0,
-    "key": "tech_starbase_1",
-    "feature_unlocks": [
-      "Unlocks Starbase: Outpost"
-    ],
-    "base_factor": 1.0,
-    "base_weight": 0,
-    "weight_modifiers": [],
-    "is_start_tech": true,
-    "name": "Starbase Construction"
-  },
-  {
-    "category": "Voidcraft",
-    "prerequisite_names": [],
-    "tier": 0,
     "description": "The earliest starbases were little more than makeshift outposts. Permanent starports will enable us to maintain a firmer grip on star systems.",
     "area": "engineering",
     "prerequisites": [
@@ -5383,29 +5319,6 @@
     "weight_modifiers": [],
     "is_start_tech": true,
     "name": "Starport"
-  },
-  {
-    "category": "Voidcraft",
-    "prerequisite_names": [],
-    "tier": 0,
-    "description": "The invasion of another world is a staggering enterprise. There are immense logistical challenges that must be overcome before we can muster our first interplanetary armies.",
-    "area": "engineering",
-    "prerequisites": [
-      "tech_planetary_defenses"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "cost": 500,
-    "key": "tech_assault_armies",
-    "feature_unlocks": [
-      "Unlocks Army: Assault Army",
-      "Unlocks Army: Hunter-Killer Army"
-    ],
-    "base_factor": 1.0,
-    "base_weight": 0,
-    "weight_modifiers": [],
-    "is_start_tech": true,
-    "name": "Interplanetary Expeditionary Forces"
   },
   {
     "category": "Materials",
@@ -5448,26 +5361,6 @@
     "weight_modifiers": [],
     "is_start_tech": true,
     "name": "Chemical Thrusters"
-  },
-  {
-    "category": "Voidcraft",
-    "prerequisite_names": [],
-    "tier": 0,
-    "description": "This will enable the construction of defensive deep space platforms to protect our Starbases.",
-    "area": "engineering",
-    "prerequisites": [
-      "tech_starbase_1"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "cost": 0,
-    "key": "tech_space_defense_station_1",
-    "feature_unlocks": [],
-    "base_factor": 1.0,
-    "base_weight": 0,
-    "weight_modifiers": [],
-    "is_start_tech": true,
-    "name": "Deep Space Defenses"
   },
   {
     "category": "Industry",
@@ -7159,8 +7052,8 @@
     "description": "An even more powerful long-range, ship-based artillery cannon, equipped with a new barrel and an upgraded fire control computer.",
     "area": "engineering",
     "prerequisites": [
-      "tech_mass_drivers_5",
-      "tech_kinetic_artillery_1"
+        "tech_kinetic_artillery_1",
+        "tech_mass_drivers_5"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -7217,8 +7110,8 @@
     "description": "An even more powerful mass accelerator cannon that can rip through even the toughest shields.",
     "area": "engineering",
     "prerequisites": [
-      "tech_mass_drivers_5",
-      "tech_mass_accelerator_1"
+      "tech_mass_accelerator_1",
+      "tech_mass_drivers_5"
     ],
     "is_dangerous": false,
     "is_rare": false,
