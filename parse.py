@@ -256,6 +256,9 @@ def localized_strings():
             print('Unable to find head YAML key for {}'.format(filename))
             sys.exit()
 
+    for data in loc_data:
+        if(data[0]=='$'):print(data)
+
     return loc_data
 
 tech_file_paths = []
