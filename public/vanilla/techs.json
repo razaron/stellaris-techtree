@@ -416,7 +416,7 @@
   {
     "category": "Particles",
     "prerequisite_names": [
-      "\u2022 Reactor Boosters\n"
+      "\u2022 Fusion Power\n"
     ],
     "tier": 1,
     "description": "The discovery of fusion power allows for better reactor boosters to be fitted onto our ships.",
@@ -443,7 +443,7 @@
   {
     "category": "Particles",
     "prerequisite_names": [
-      "\u2022 Improved Reactor Boosters\n"
+      "\u2022 Antimatter Power\n"
     ],
     "tier": 1,
     "description": "The discovery of antimatter power allows for highly advanced reactor boosters that can greatly enhance ship reactors.",
@@ -1521,7 +1521,7 @@
   {
     "category": "Particles",
     "prerequisite_names": [
-      "\u2022 Particle Lances\n"
+      "\u2022 Gamma Lasers\n"
     ],
     "tier": 4,
     "description": "A more powerful version of the particle lance, this weapon fires a tachyon beam of immense power. Like its predecessor, its use is limited to battleships and titans.",
@@ -7046,7 +7046,7 @@
   {
     "category": "Propulsion",
     "prerequisite_names": [
-      "\u2022 Kinetic Battery\n"
+      "\u2022 Gauss Cannons\n"
     ],
     "tier": 4,
     "description": "An even more powerful long-range, ship-based artillery cannon, equipped with a new barrel and an upgraded fire control computer.",
@@ -7104,7 +7104,7 @@
   {
     "category": "Propulsion",
     "prerequisite_names": [
-      "\u2022 Mega Cannon\n"
+      "\u2022 Gauss Cannons\n"
     ],
     "tier": 4,
     "description": "An even more powerful mass accelerator cannon that can rip through even the toughest shields.",
